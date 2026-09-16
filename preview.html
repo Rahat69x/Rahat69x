@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahat69x - Animated GitHub Profile Banner Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #050811;
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #22d3ee;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      margin-top: -30px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+    .preview-card {
+      background: #0a101f;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      max-width: 1200px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .preview-card.light-card {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+    .preview-card.light-card h2 {
+      color: #0891b2;
+    }
+    .preview-card.light-card .meta {
+      color: #64748b;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .light-card .card-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .meta {
+      font-size: 13px;
+      color: #94a3b8;
+      font-family: monospace;
+    }
+    img.banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rahat69x Animated Terminal Banner (Phase 1)</h1>
+  <p class="subtitle">Live SMIL SVG Animation: Floyd–Steinberg dithered portrait, 60-group intro shimmer, 94 drift bands, 900-traveller logo morph (Flutter &rarr; &lt;/&gt; &rarr; Vercel)</p>
+
+  <!-- Dark Mode Preview -->
+  <div class="preview-card">
+    <div class="card-header">
+      <h2 style="color: #22d3ee;">Dark Mode (assets/dark.svg)</h2>
+      <span class="meta">Palette: #A78BFA portrait · #22D3EE chrome · #10B981 accent · #0A101F bg</span>
+    </div>
+    <img src="assets/dark.svg" class="banner" alt="Dark Mode Animated Banner" />
+  </div>
+
+  <!-- Light Mode Preview -->
+  <div class="preview-card light-card">
+    <div class="card-header">
+      <h2>Light Mode (assets/light.svg)</h2>
+      <span class="meta">Palette: #7C3AED portrait · #0891B2 chrome · #059669 accent · #F8FAFC bg</span>
+    </div>
+    <img src="assets/light.svg" class="banner" alt="Light Mode Animated Banner" />
+  </div>
+
+  <!-- Phase 2: Themed Stats Cards Preview -->
+  <div class="preview-card">
+    <div class="card-header">
+      <h2 style="color: #22d3ee;">Phase 2: Themed GitHub Stats Cards (Self-Hosted Preview)</h2>
+      <span class="meta">Palette Themed: #0A101F bg · #22D3EE title · #10B981 icons · #1E293B border</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 15px; width: 100%; margin-top: 10px;">
+      <!-- Streak Card: 100% width -->
+      <img style="width: 100%; border-radius: 8px;" src="https://streak-stats.demolab.com/?user=Rahat69x&theme=dark&background=0A101F&border=1E293B&stroke=1E293B&ring=22D3EE&fire=10B981&currStreakNum=F1F5F9&sideNums=F1F5F9&currStreakLabel=22D3EE&sideLabels=94A3B8&dates=64748B" alt="GitHub Streak Stats" />
+      <!-- Stats and Top Langs: Side by Side 49% width -->
+      <div style="display: flex; justify-content: space-between; gap: 2%;">
+        <img style="width: 49%; border-radius: 8px;" src="https://github-readme-stats.vercel.app/api?username=Rahat69x&show_icons=true&hide_rank=true&bg_color=0A101F&title_color=22D3EE&text_color=F1F5F9&icon_color=10B981&border_color=1E293B" alt="GitHub Stats" />
+        <img style="width: 49%; border-radius: 8px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahat69x&layout=compact&langs_count=8&bg_color=0A101F&title_color=22D3EE&text_color=F1F5F9&border_color=1E293B" alt="Top Languages" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 3: Contribution Snake Preview -->
+  <div class="preview-card">
+    <div class="card-header">
+      <h2 style="color: #22d3ee;">Phase 3: Contribution Snake Workflow Preview (.github/workflows/snake.yml)</h2>
+      <span class="meta">Output Branch: output · Empty Cell: #2D3343 (Slate) · Snake: #22D3EE</span>
+    </div>
+    <p style="font-size: 14px; color: #94a3b8; margin: 0 0 10px 0;">
+      Theme-aware <code>&lt;picture&gt;</code> element pulls dynamically from the <code>output</code> branch once the Action completes its first green run:
+    </p>
+    <div style="background: #0d1117; padding: 15px; border-radius: 8px; border: 1px solid #30363d;">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rahat69x/Rahat69x/output/github-contribution-grid-snake-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rahat69x/Rahat69x/output/github-contribution-grid-snake.svg" />
+        <img alt="Rahat69x Contribution Snake" src="https://raw.githubusercontent.com/Rahat69x/Rahat69x/output/github-contribution-grid-snake-dark.svg" width="100%" style="border-radius: 6px;" onerror="this.parentElement.innerHTML='&lt;div style=\'text-align:center; padding: 25px; color:#94a3b8; font-family: monospace; font-size:13px;\'&gt;🐍 Waiting for first GitHub Action run to create the &lt;b&gt;output&lt;/b&gt; branch. Follow setup steps below.&lt;/div&gt;'" />
+      </picture>
+    </div>
+  </div>
+</body>
+</html>
